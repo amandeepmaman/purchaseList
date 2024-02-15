@@ -1,0 +1,143 @@
+  /* Common styles for both desktop and mobile */
+  body {
+    font-family: "Source Sans 3", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #CDCED9;
+  }
+  caption {
+    color: #16145A;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  th{
+    padding: 12px;
+    border-bottom: 1px solid #CDCED9;
+    border-top: 1px solid #CDCED9;
+    text-align: left;
+    font-weight: 600;
+    color: #272833;
+  }
+  .empty-row {
+    width: 40px;
+  }
+  tbody tr {
+    height: 130px;
+  }
+  tbody td {
+    width: 164px;
+  }
+  .technology-category {
+    border: #CDCED9 1px solid;
+    color: #000000;
+    border-radius: 2px;
+    padding: 3px 12px;
+  }
+  .shopping-category {
+    border: #98D4A9 1px solid;
+    color: #118632;
+    border-radius: 2px;
+    padding: 3px 12px;
+  }
+  .automotive-category {
+    border: #FF8577 1px solid;
+    color: #D94130;
+    border-radius: 2px;
+    padding: 3px 12px;
+  }
+  .entertainment-category {
+    border: #89A7E0 1px solid;
+    color: #2E5AAC;
+    border-radius: 2px;
+    padding: 3px 12px;
+  }
+  .font700 {
+    font-weight: 700;
+  }
+  .name {
+    color: #272833;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize; /* Capitalizes each of the first letter of the name */
+  }
+
+  img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 20px;
+  }
+  .three-dots {
+    width: 10px;
+  }
+  .mobile-view {
+    display: none;
+  }
+
+  
+  /* Styles for mobile */
+  @media screen and (max-width: 600px) {
+    .desktop-view {
+      display: none;
+    }
+    .mobile-view {
+      display: block;
+    }
+    .mobile-view {
+      margin: 10px 20px;
+      border-radius: 10px;
+    }
+    table{
+      border: none;
+    }
+    .mobile-view .description{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #272833;
+      width: 300px;
+    }
+    .mobile-view img{
+      margin-right: 20px;
+    }
+    .mobile-view .item-info {
+      display: flex;
+      align-items: center;
+    }
+    .mobile-view .name {
+      color: #232326;
+    }
+    .mobile-view .purchase-price{
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      margin-left: auto;
+    }
+    /* Table headers should not be displayed for mobile view */
+    table thead {
+        display: none;
+    }
+    tbody td {
+      width: auto;
+      padding: 10px;
+    }
+    tbody tr {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #CDCED9;
+      margin-bottom: 10px;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
